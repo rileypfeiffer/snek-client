@@ -15,9 +15,12 @@ const connect = function () {
   });
 
   conn.on("connect", () => {
-    conn.write('Name: RP');
+    conn.write('Name: DN');
   });
 
+  //conn.on("connect", () => {
+  //setInterval(() => {conn.write("Move: up")}, 50)
+  //});
   // interpret incoming data as text
   conn.setEncoding("utf8");
 
